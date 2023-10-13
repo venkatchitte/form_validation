@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkkhaki;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: beige;
+    border-radius: 10px;
+   
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 4px solid rgb(193, 19, 19); 
+}
+.header{
+    text-align: center;
+    background-color: #6aca9f;
+    padding: 20px 40px;
+    border-bottom: 1px solid #1caf6a;
+}
+.form{
+    padding: 30px 40px;
+}
+.feild{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.feild label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.feild input:not(.terms){
+   display: block;
+   border-radius: 7px;
+   border: 2px solid #1caf6a;
+   font-size: 14px;
+   width: 70%;
+   padding: 5px;
+}
+.feild span{
+    position: absolute;
+    top: 30px;
+    right: 4px;
+    visibility: hidden;
+
+}
+.feild small{
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    visibility: hidden;
+}
+.button{
+    justify-content: center;
+    align-items: center;
+    background-color: #6aca9f;
+    border: 2px solid firebrick;
+    color: wheat;
+    padding: 8px;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.feild.success input{
+    border-color: rgb(80, 212, 80);
+}
+.feild.error input{
+    border-color: rgb(180, 24, 24);
+}
+.feild.success span.success{
+    color: rgb(80, 212, 80);
+    visibility: visible;
+}
+.feild.error span.error{
+    color: rgb(210, 15, 15);
+    visibility: visible;
+}
+.feild.error span.success{
+    visibility: none;
+}
+.feild.success span.error{
+    visibility: none;
+}
+.feild.error small{
+    visibility: visible;
+    color: red;
+}
